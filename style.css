@@ -36,7 +36,7 @@ main{
 }
 header>ul{
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 2.5vh;
 }
 header>ul>li{
     padding: 8px 0;
@@ -44,7 +44,7 @@ header>ul>li{
 header>ul>li>a{
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -52,7 +52,7 @@ header>ul>li>a{
     display: flex;
 }
 .socialMedia{
-    height: 20px;
+    height: 2vh;
     fill: white;
     padding: 10px 0;
     padding-right: 20px;
@@ -62,30 +62,43 @@ main>section{
 }
 #home{
     display: flex;
-    height: 950px;
+    height: 100vh;
     backdrop-filter: brightness(60%);
     justify-content: center;
     align-items: center;
 }
 #home >div{
-    height: 280px;
+    height: 31vh;
     width: 58%;
-    background-color: black;
 }
 #home > div> h1{
     font-family: "Oswald", sans-serif;
     color: white;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 6px;
 }
 #home > div> p{
     text-align: center;
-    font-size: 19px;
+    font-size: 1.2rem;
     line-height: 160%;
 }
-#b{
+#home > div> div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vh;
+}
+#home > div> div>a {
+    background-color: #df0e62;
+    padding: 1.7vh 3%;
+    border-radius: 4vh;
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: 1.7px;
+}
+#photos{
 background-color: white;
 }
 #c{

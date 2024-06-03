@@ -90,7 +90,7 @@ main>section{
 }
 #home > div> div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin-top: 5vh;
 }
@@ -163,15 +163,50 @@ background-image: url(Photos/img_10.jpg.webp);
 #photos>.photo>div>svg{
     fill: white;
     height: 3vh;
-
+    position: relative;
+    transition: 1s;
 }
+@keyframes lupaAnimation {
+    from{
+        top: 20px;
+    }
+    to{
+        top: 0px;
+    }
+}
+#photos>.photo:hover>div>svg{
+    fill: white;
+    height: 3vh;
+    animation-name: lupaAnimation;
+    animation-duration: .4s;
+    
+}
+
+
+
 
 #photos>.photo:hover>div{
     backdrop-filter: brightness(40%);
     opacity: 100;
 }
-#c{
-background-color: cadetblue;
+#testimonial{
+background-color: black;
+padding: 12vh;
+}
+#testimonial>h1{
+text-transform: uppercase;
+font-family: "Oswald", sans-serif; 
+font-weight: 400;
+font-size: 4rem;
+text-align: center;
+
+}
+#testimonial>#carrossel{
+background-color: red;
+display: flex;
+}
+#testimonial>#carrossel>.arrow{
+    
 }
 #d{
 background-color: orange;

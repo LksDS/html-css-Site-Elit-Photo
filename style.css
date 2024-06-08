@@ -248,7 +248,7 @@ background-color: #df0e62;
 }
 #Biography{
     background-color: #1a1a1a;
-    padding: 12.8vh 25% 10vh 28%;
+    padding: 12.8vh 25% 10vh 24%;
     position:relative;
 }
 #Biography>#rectangle{
@@ -308,5 +308,66 @@ color: gray;
 }
 #blog{
     background-color: black;
-    padding: 12.8vh 25% 10vh 28%;
+    padding: 12.8vh 25% 10vh 24%;
+}
+.blog-article{
+    width: 94%;
+    display: flex;
+    height: 23vh;
+    margin-bottom: 4vh
+}
+.blog-article > img{
+    width: 65%;
+    object-fit: cover;
+    margin-right: 7%;
+    cursor: pointer;
+}
+.blog-info{
+    display: flex;
+    flex-direction: column;
+}
+.blog-info>a    {
+font-size: 1.5rem;
+font-weight: 400;
+font-family: "Oswald", sans-serif;
+margin-bottom: .75vh;
+}
+.blog-info>span{
+    font-weight: 300;
+    margin-bottom: 1.5vh;
+}
+#nav{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    width: 4vh;
+    margin-right: 1%;
+    padding: 1.2vh;
+}
+.nav-option>span{
+
+    text-align: center;
+}
+.nav-hover{
+    border-radius: 50%;
+    transition: .35s;
+}
+.nav-hover:hover{
+    background-color: #df0e62;
+    cursor: pointer;
+}
+.nav-hover>span{
+    color: #df0e62;
+    transition: .35s;
+}
+.nav-hover:hover>span{
+    color: white;
+
 }

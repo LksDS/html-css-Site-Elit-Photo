@@ -259,7 +259,7 @@ background-color: #df0e62;
     top: 0;
     left: 0;
 }
-#Biography>h2{
+h2{
 color: white;
 font-size: 4rem;
 text-transform: uppercase;
@@ -270,14 +270,14 @@ margin-bottom: 7vh;
 #Biography>img{
 width: 50%;
 }
-#Biography>h3{
+h3{
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     margin-top: 4.5vh;
     margin-bottom: 1vh;
 }
-#Biography>.bio-lorem{
+.bio-lorem{
 line-height: 150%;
 color: gray;
 }
@@ -291,6 +291,22 @@ color: gray;
 .red-hover:hover{
     filter: brightness(60%);
 }
-#e{
-background-color: darkgreen;
+#green-marker-section{
+    display: flex;
+}
+.green-marker-ul{
+    width: 40%;
+    margin-right: 20%;
+}
+.green-marker-ul>li{
+    display: flex;
+    margin-bottom: 1vh;
+}
+.green-marker{
+    color: #8bc34a;
+    margin-right: 8%;
+}
+#blog{
+    background-color: black;
+    padding: 12.8vh 25% 10vh 28%;
 }

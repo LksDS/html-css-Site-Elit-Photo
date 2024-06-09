@@ -9,7 +9,7 @@
 }
 body{
     display: flex;
-    background-image: url(Photos/img_9.jpg);
+    background-image: url(Photos/img_9.jpg.webp);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -163,7 +163,6 @@ header>ul>li>a{
     filter: brightness(40%);
 }
 #testimonial{
-    height: 75vh;
     background-color: black;
     padding: 12vh 0;
 }
@@ -178,6 +177,11 @@ header>ul>li>a{
 #testimonial>#carrossel{
     display: flex;
 }
+#testimonial>#carrossel>.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #testimonial>#carrossel>.arrow>div:hover{
     background-color: #df0e62;
 }
@@ -187,14 +191,11 @@ header>ul>li>a{
     border-radius: 50%;
     background-color: #1a1a1a;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     transition: all .4s;
 }
 #testimonial>#carrossel>.arrow>div>svg{
     fill: white;
-    height: 2vh;
+    width: 30%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -203,7 +204,6 @@ header>ul>li>a{
 #testimonial>#carrossel{
     display: flex;
     justify-content: center;
-    height: 40vh;
 }
 #testimonial>#carrossel>#carrossel-content{
 display: flex;
@@ -251,7 +251,7 @@ background-color: #df0e62;
     padding: 12.8vh 25% 10vh 24%;
     position:relative;
 }
-#Biography>#rectangle{
+.rectangle{
     background-color: #df0e62;
     height: .5vh;
     width: 6%;
@@ -318,11 +318,13 @@ color: gray;
 }
 .blog-article > img{
     width: 65%;
+    height: 100%;
     object-fit: cover;
     margin-right: 7%;
     cursor: pointer;
 }
 .blog-info{
+    width: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -333,8 +335,13 @@ font-family: "Oswald", sans-serif;
 margin-bottom: .75vh;
 }
 .blog-info>span{
+    color: gray;
     font-weight: 300;
     margin-bottom: 1.5vh;
+}
+.blog-info>p{
+    color: gray;
+    font-size: 1rem;
 }
 #nav{
     margin-top: 10vh;
@@ -370,4 +377,85 @@ margin-bottom: .75vh;
 .nav-hover:hover>span{
     color: white;
 
+}
+#Contact-title{
+    margin-bottom: 5vh;
+}
+#contact{
+    position: relative;
+    background-color: #1a1a1a;
+    padding: 12.8vh 25% 14vh 24%;
+}
+
+#formulario-contato>div>div{
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+justify-content: space-between;
+}
+
+#firstName{
+    margin-right: 1%;
+}
+.form-row{
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 2vh;
+}
+input{
+    width: 100%;
+    height: 3.6vh;
+}
+input,textarea{
+    background : none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: 0;
+}
+
+textarea{
+    resize: vertical;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+.form-row>input,textarea{
+    margin-top: 2vh;
+}
+
+#linha1{
+    display: flex;
+}
+#message-row{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+#submit {
+    width: 22%;
+    border: none;
+    height: 5.5vh;
+    background-color: #df0e62;
+    padding: 1.7vh 3%;
+    border-radius: 4vh;
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .1rem;
+    transition: all .3s ease;
+}
+#submit:hover {
+    background-color: #9e0945;
+}
+#final{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 15vh;
+    background-color: black;
+}
+#final>p{
+    text-align: center;
+    color: gray;
+}
+#coracao{
+    color: #f23a2e;
 }
